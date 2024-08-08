@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/candidates1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANDIDATE 1 VOTE COUNT : "
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/candidate1_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toRightOf="@id/candidates1"
+        app:layout_constraintTop_toTopOf="@id/candidates1"
+        app:layout_constraintBottom_toBottomOf="@id/candidates1" />
+
+    <TextView
+        android:id="@+id/candidates2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANDIDATE 2 VOTE COUNT : "
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/candidates1"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/candidate2_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toRightOf="@id/candidates2"
+        app:layout_constraintTop_toTopOf="@id/candidates2"
+        app:layout_constraintBottom_toBottomOf="@id/candidates2" />
+
+    <TextView
+        android:id="@+id/candidates3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANDIDATE 3 VOTE COUNT : "
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/candidates2"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/candidate3_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toRightOf="@id/candidates3"
+        app:layout_constraintTop_toTopOf="@id/candidates3"
+        app:layout_constraintBottom_toBottomOf="@id/candidates3" />
+
+
+    <TextView
+        android:id="@+id/candidates4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANDIDATE 4 VOTE COUNT : "
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/candidates3"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/candidate4_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toRightOf="@id/candidates4"
+        app:layout_constraintTop_toTopOf="@id/candidates4"
+        app:layout_constraintBottom_toBottomOf="@id/candidates4" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="LOGOUT"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
